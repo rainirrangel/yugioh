@@ -1,0 +1,8 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Yugioh';
+    src: url(../fontes/fonte-yu-gi-oh.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
