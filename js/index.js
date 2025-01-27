@@ -17,6 +17,18 @@ btnPrev.addEventListener("click", function() {
         mostrarCartao(cartaoAtual);
 }})
 
+cartoes.forEach(cartao => {
+    cartao.addEventListener("click", function () {
+        const cartaVirada = cartao.querySelector(".carta-virada");
+        
+        cartao.classList.toggle("virar");
+        cartaVirada.classList.toggle("mostrar-fundo-carta");
+
+        const descricao = cartao.querySelector(".descricao");
+        descricao.classList.toggle("esconder");
+    })    
+});
+
 function esconderCartao(cartaoAtual) {
     cartoes[cartaoAtual].classList.remove("selecionado");
 }
